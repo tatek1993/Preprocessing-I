@@ -21,23 +21,19 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+	// font: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
-
-
-	@import url('https://fonts.googleapis.com/css?family=Cherry+Bomb&display=swap');
-
-	@main-font: 'Cherry Bomb', cursive;	
 }
 body {
 	line-height: 2;
-	font-family: @main-font;
-}
+	width: 100%;
+
+} 
 ol, ul {
 	list-style: none;
 }
@@ -59,8 +55,44 @@ table {
     box-sizing: border-box;
 }
 
+html{
+	font-size: 62.5%;
+}
+
 html, body {
 	height: 100%;
-	font-family: @main-font;
+	
 }
+
+header{
+	display: flex;
+	flex-direction: row;
+}
+.navigation{
+	display:flex;
+	justify-content: flex-end;	
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	font-size: 2rem;
+}
+
+h1{
+	font-size: 4rem;
+	}
+h2{
+	font-size: 3rem;
+}
+
+.credentials{
+	display: flex;
+
+	div{
+		width: 45%;
+	}
+}
+
 
