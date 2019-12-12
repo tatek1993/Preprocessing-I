@@ -143,7 +143,12 @@ header {
 }
 .navigation {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
+  width: 90%;
+}
+.navigation a {
+  color: lavender;
+  padding: 1%;
 }
 body {
   display: flex;
@@ -160,16 +165,21 @@ h1 {
 h2 {
   font-size: 3rem;
 }
+.titleText {
+  display: flex;
+  flex-direction: column;
+}
 #section1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   background-color: midnightblue;
-  border: 2px solid red;
+  border: 2rem double lavender;
+  padding: 1rem;
   width: 100%;
 }
 #section1 div {
-  width: 50%;
+  width: 48%;
   padding: 2%;
   margin: 1%;
   display: flex;
@@ -178,10 +188,8 @@ h2 {
 }
 #section1 div img {
   width: 90%;
-}
-.titleText {
-  display: flex;
-  flex-direction: column;
+  border: 2rem double lavender;
+  padding: 1rem;
 }
 .credentials {
   display: flex;
@@ -191,10 +199,22 @@ h2 {
 .credentials div {
   width: 48%;
   padding: 2%;
-  border: 2px solid red;
+  border: 2rem double lavender;
+  padding: 1rem;
+  background-color: midnightblue;
 }
-table {
-  border-spacing: 1%;
+.section3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 2%;
+}
+.section3 section {
+  border: 2rem double lavender;
+  padding: 1rem;
+  width: 50%;
+  width: 48%;
+  padding: 2%;
 }
 table tr:nth-child(even) {
   background-color: royalblue;
@@ -209,4 +229,14 @@ table th {
 table th,
 table td {
   padding: 1%;
+}
+.contact-section {
+  background-color: midnightblue;
+}
+@media (max-width: 500px) {
+  .credentials,
+  .section3 {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
